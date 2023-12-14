@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localização</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #80805b;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .mapa-conteudo {
+        position: relative;
+        width: 600px;
+        height: 500px;
+        background: #fff;
+    }
+    
+    .titulo-principal {
+        margin: 0 0 2em;
+        text-align: center;
+    }
+    
+    .mapa p {
+        margin: 0 0 2em;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .exit-button {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    #exitButton a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    #exitButton {
+        padding: 10px 20px;
+        background-color: #b9b98e;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    #exitButton:hover {
+        background-color: #80805a;
+    }
+    
+    @media screen and (max-width: 600px) {
+        .mapa-conteudo {
+            width: 300px;
+            height: 200px;
+        }
+    }
+</style>
+
+<body>
+    <section class="mapa">
+        <br>
+        <h3 class="titulo-principal">Nosso clínica esta localizada em Garça-SP</h3>
+        <p>R.Tiradentes,490 - Centro, Garça-SP, 17400-000</p>
+        <div class="mapa-conteudo">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3693.8346179880978!2d-49.66035858585524!3d-22.208390518903897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bfb9af25f11e65%3A0xfd26dfa8d6d169d4!2sSABER%20EDUCACIONAL!5e0!3m2!1spt-BR!2sbr!4v1669645560806!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <br>
+
+        <div class="exit-button">
+            <button id="exitButton"><a href="index.html">Sair</a></button>
+        </div>
+        <br>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+
+/* Coluna esquerda */
+
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+
+/* Coluna direita */
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+
+/* imagem falsa para visualização no site */
+
+.fakeimg {
+    background-color: #80805b;
+    width: 100%;
+    padding: 20px;
+}
+
+.fakeimg2 {
+    background-color: #80805b;
+    width: 100%;
+    padding: 20px;
+}
+
+
+/* Adiciona um efeito de cartão para artigos */
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card h2 {
+    color: #444;
+    font-size: 32px;
+}
+
+.card h3 {
+    color: #444;
+}
+
+.card2 {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card2 h2 {
+    color: #C85119;
+}
+
+.fakeimg {
+    text-decoration: none;
+    color: #444;
+}
+
+
+/* Limpar floats após as colunas */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Rodapé */
+
+
+/* Layout responsivo - quando a tela tiver menos de 800px de largura,faz as duas colunas empilharem uma sobre a outra em vez de uma ao lado da outra */
+
+@media screen and (max-width: 800px) {
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+/* Layout responsivo - quando a tela tiver menos de 400px de largura, faz os links de navegação empilharem um sobre o outro em vez de um ao lado do outro */
+
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}

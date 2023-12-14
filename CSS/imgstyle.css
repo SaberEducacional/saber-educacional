@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: #C85119;
+    border-bottom: 1px solid rgb(200, 200, 200);
+    width: 100%;
+    padding: 10px;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.logo {
+    width: 80%;
+}
+
+.menu ul {
+    margin: 2px auto 0;
+    padding: 0;
+    list-style: none;
+    display: table;
+    width: 500px;
+    text-align: center;
+}
+
+.menu li {
+    display: table-cell;
+    position: relative;
+    padding: 15px 0;
+}
+
+.menu a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.menu a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: " ";
+    display: block;
+    height: 2px;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.menu a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.text p {
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+    color: #4e4e4e;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    justify-content: center;
+    -webkit-overflow-scrolling: touch;
+    /* Rolagem suave para dispositivos móveis */
+    gap: 20px;
+    padding: 20px;
+}
+
+gallery-item {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item:last-child {
+    margin-right: 0;
+}
+
+
+/*imagem ampliada */
+
+.gallery-item.enlarged {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+
+/* Estilo para rolagem horizontal */
+
+.gallery::-webkit-scrollbar {
+    height: 8px;
+}
+
+.gallery::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 4px;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+#lightboxImage {
+    max-width: 80%;
+    max-height: 80%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* Estilo para as setas de navegação */
+
+.arrow-button {
+    display: none;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+#prevButton {
+    left: 10px;
+    color: #C85119;
+}
+
+#nextButton {
+    right: 10px;
+    color: #C85119;
+}
+
+.footer {
+    background-color: #232323e3;
+    color: #ccc;
+    padding: 15px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .logo img {
+        width: 190px;
+    }
+    .menu ul {
+        width: 200px;
+    }
+}

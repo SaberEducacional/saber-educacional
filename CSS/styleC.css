@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: #C85119;
+    border-bottom: 1px solid rgb(200, 200, 200);
+    width: 100%;
+    padding: 10px;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.logo {
+    width: 80%;
+}
+
+.menu ul {
+    margin: 2px auto 0;
+    padding: 0;
+    list-style: none;
+    display: table;
+    width: 500px;
+    text-align: center;
+}
+
+.menu li {
+    display: table-cell;
+    position: relative;
+    padding: 15px 0;
+}
+
+.menu a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.menu a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: " ";
+    display: block;
+    height: 2px;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.menu a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 20px;
+}
+
+.convenios {
+    text-align: center;
+}
+
+.convenios p {
+    font-size: 20px;
+    color: #4e4e4e;
+}
+
+.convenios ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.convenios li {
+    margin: 0 0 20px 0;
+    overflow: hidden;
+    position: relative;
+    flex: 0 0 calc(20% - 20px);
+}
+
+.convenios a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    position: relative;
+}
+
+.convenios img {
+    width: 70%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.convenios a:hover img {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #232323e3;
+    color: #ccc;
+    padding: 15px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .logo img {
+        width: 190px;
+    }
+    .menu ul {
+        width: 200px;
+    }
+    .convenios li {
+        flex: 0 0 calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .convenios li {
+        flex: 0 0 calc(100% - 20px);
+        /* Em telas ainda menores, altera para 1 coluna ocupando toda a largura */
+    }
+}
