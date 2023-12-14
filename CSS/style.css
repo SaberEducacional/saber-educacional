@@ -271,6 +271,7 @@ section.profissionais .profissionais-chamada {
     padding: 20px;
     background-color: #f3f9fd;
     border-radius: 10px;
+    text-decoration: none;
 }
 
 .profi-single-box p {
