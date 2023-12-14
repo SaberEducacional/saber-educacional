@@ -277,6 +277,10 @@ section.profissionais .profissionais-chamada {
     font-style: italic;
     color: #4b4b4b;
     font: 16px;
+    text-decoration: none;
+}
+.profi-single a{
+text-decoration:none
 }
 
 .profi-single span {
